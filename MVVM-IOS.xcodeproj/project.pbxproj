@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0EBF1D6C29AD788FB140EAF0 /* Pods_MVVM_IOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2DBDF4ED0C32831C968264E1 /* Pods_MVVM_IOS.framework */; };
 		98A593F720C0F4E8004B69F3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98A593F620C0F4E8004B69F3 /* AppDelegate.swift */; };
 		98A593F920C0F4E8004B69F3 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98A593F820C0F4E8004B69F3 /* ViewController.swift */; };
 		98A593FC20C0F4E8004B69F3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 98A593FA20C0F4E8004B69F3 /* Main.storyboard */; };
@@ -15,6 +16,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2DBDF4ED0C32831C968264E1 /* Pods_MVVM_IOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MVVM_IOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8287BFB565C6D0D521B13971 /* Pods-MVVM-IOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MVVM-IOS.release.xcconfig"; path = "Pods/Target Support Files/Pods-MVVM-IOS/Pods-MVVM-IOS.release.xcconfig"; sourceTree = "<group>"; };
 		98A593F320C0F4E8004B69F3 /* MVVM-IOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "MVVM-IOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		98A593F620C0F4E8004B69F3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		98A593F820C0F4E8004B69F3 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -22,6 +25,7 @@
 		98A593FD20C0F4EA004B69F3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		98A5940020C0F4EA004B69F3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		98A5940220C0F4EA004B69F3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B8E2E16C6374B4ECCE8C7C80 /* Pods-MVVM-IOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MVVM-IOS.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MVVM-IOS/Pods-MVVM-IOS.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,17 +33,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0EBF1D6C29AD788FB140EAF0 /* Pods_MVVM_IOS.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		07602E4E6F157E9050E97D2C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				2DBDF4ED0C32831C968264E1 /* Pods_MVVM_IOS.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		14E1A50BADED2C246616B483 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				B8E2E16C6374B4ECCE8C7C80 /* Pods-MVVM-IOS.debug.xcconfig */,
+				8287BFB565C6D0D521B13971 /* Pods-MVVM-IOS.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		98A593EA20C0F4E8004B69F3 = {
 			isa = PBXGroup;
 			children = (
 				98A593F520C0F4E8004B69F3 /* MVVM-IOS */,
 				98A593F420C0F4E8004B69F3 /* Products */,
+				14E1A50BADED2C246616B483 /* Pods */,
+				07602E4E6F157E9050E97D2C /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -54,14 +78,38 @@
 		98A593F520C0F4E8004B69F3 /* MVVM-IOS */ = {
 			isa = PBXGroup;
 			children = (
+				98A5940920C0F646004B69F3 /* view */,
+				98A5940820C0F62D004B69F3 /* model */,
 				98A593F620C0F4E8004B69F3 /* AppDelegate.swift */,
-				98A593F820C0F4E8004B69F3 /* ViewController.swift */,
 				98A593FA20C0F4E8004B69F3 /* Main.storyboard */,
 				98A593FD20C0F4EA004B69F3 /* Assets.xcassets */,
 				98A593FF20C0F4EA004B69F3 /* LaunchScreen.storyboard */,
 				98A5940220C0F4EA004B69F3 /* Info.plist */,
 			);
 			path = "MVVM-IOS";
+			sourceTree = "<group>";
+		};
+		98A5940820C0F62D004B69F3 /* model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = model;
+			sourceTree = "<group>";
+		};
+		98A5940920C0F646004B69F3 /* view */ = {
+			isa = PBXGroup;
+			children = (
+				98A5940A20C0F650004B69F3 /* viewmodel */,
+			);
+			path = view;
+			sourceTree = "<group>";
+		};
+		98A5940A20C0F650004B69F3 /* viewmodel */ = {
+			isa = PBXGroup;
+			children = (
+				98A593F820C0F4E8004B69F3 /* ViewController.swift */,
+			);
+			path = viewmodel;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -71,9 +119,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 98A5940520C0F4EA004B69F3 /* Build configuration list for PBXNativeTarget "MVVM-IOS" */;
 			buildPhases = (
+				380C0AEF0C203F1CB4A144E1 /* [CP] Check Pods Manifest.lock */,
 				98A593EF20C0F4E8004B69F3 /* Sources */,
 				98A593F020C0F4E8004B69F3 /* Frameworks */,
 				98A593F120C0F4E8004B69F3 /* Resources */,
+				2CF1F4F7CD8E848926C8E3D2 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -129,6 +179,55 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		2CF1F4F7CD8E848926C8E3D2 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-MVVM-IOS/Pods-MVVM-IOS-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/Differentiator/Differentiator.framework",
+				"${BUILT_PRODUCTS_DIR}/RxAlamofire/RxAlamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/RxCocoa/RxCocoa.framework",
+				"${BUILT_PRODUCTS_DIR}/RxDataSources/RxDataSources.framework",
+				"${BUILT_PRODUCTS_DIR}/RxSwift/RxSwift.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Differentiator.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxAlamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxCocoa.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxDataSources.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxSwift.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MVVM-IOS/Pods-MVVM-IOS-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		380C0AEF0C203F1CB4A144E1 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-MVVM-IOS-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		98A593EF20C0F4E8004B69F3 /* Sources */ = {
@@ -278,10 +377,13 @@
 		};
 		98A5940620C0F4EA004B69F3 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B8E2E16C6374B4ECCE8C7C80 /* Pods-MVVM-IOS.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 878W62G5Y7;
 				INFOPLIST_FILE = "MVVM-IOS/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -295,10 +397,13 @@
 		};
 		98A5940720C0F4EA004B69F3 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8287BFB565C6D0D521B13971 /* Pods-MVVM-IOS.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 878W62G5Y7;
 				INFOPLIST_FILE = "MVVM-IOS/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

@@ -35,7 +35,7 @@ class LoginViewModel {
             }
             subbmiter.onCompleted()
             return Disposables.create()
-        })
+        }).delay(2, scheduler: MainScheduler.asyncInstance)
             
             .do(onNext: { (success) in
                 self.result.value = "登录成功 \(self.userName.value) \(self.password.value)"

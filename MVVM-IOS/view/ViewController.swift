@@ -58,17 +58,16 @@ class ViewController: UIViewController {
     
     private func login() {
         mViewModel.signup()
-            .debug()
-            .delay(2, scheduler: MainScheduler.asyncInstance)
             .do(onSubscribe: {
                 print("onSubscribe")
                 self.loadingOutlet.isHidden = false
                 self.loadingOutlet.startAnimating()
-            }, onSubscribed: {
-                print("onSubscribed")
-                self.loadingOutlet.isHidden = true
-                self.loadingOutlet.stopAnimating()
+                self.loginOutlet.isEnabled = false
+                self.loginOutlet.alpha = 0.5
+                self.usernameOutlet.isEnabled = false
+                self.passwordOutlet.isEnabled = false
             })
+            .observeOn(MainScheduler.instance)
             .subscribe(onNext :{ success in
                 print("onNext")
                 self.resultOutlet.textColor = UIColor.darkText
@@ -77,7 +76,12 @@ class ViewController: UIViewController {
                 self.resultOutlet.textColor = UIColor.red
             }, onDisposed : {
                 print("onDisposed")
-
+                self.loginOutlet.isEnabled = true
+                self.loginOutlet.alpha = 1.0
+                self.usernameOutlet.isEnabled = true
+                self.passwordOutlet.isEnabled = true
+                self.loadingOutlet.isHidden = true
+                self.loadingOutlet.stopAnimating()
             }).disposed(by: disposeBag)
     }
     

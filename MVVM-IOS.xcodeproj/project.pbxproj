@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		0EBF1D6C29AD788FB140EAF0 /* Pods_MVVM_IOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2DBDF4ED0C32831C968264E1 /* Pods_MVVM_IOS.framework */; };
 		9872C68420C11F5B00DDFCC2 /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9872C68320C11F5B00DDFCC2 /* LoginViewModel.swift */; };
+		9872C68720C143F100DDFCC2 /* LoginService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9872C68620C143F100DDFCC2 /* LoginService.swift */; };
 		98A593F720C0F4E8004B69F3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98A593F620C0F4E8004B69F3 /* AppDelegate.swift */; };
 		98A593F920C0F4E8004B69F3 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98A593F820C0F4E8004B69F3 /* ViewController.swift */; };
 		98A593FC20C0F4E8004B69F3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 98A593FA20C0F4E8004B69F3 /* Main.storyboard */; };
@@ -20,6 +21,7 @@
 		2DBDF4ED0C32831C968264E1 /* Pods_MVVM_IOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MVVM_IOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8287BFB565C6D0D521B13971 /* Pods-MVVM-IOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MVVM-IOS.release.xcconfig"; path = "Pods/Target Support Files/Pods-MVVM-IOS/Pods-MVVM-IOS.release.xcconfig"; sourceTree = "<group>"; };
 		9872C68320C11F5B00DDFCC2 /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
+		9872C68620C143F100DDFCC2 /* LoginService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginService.swift; sourceTree = "<group>"; };
 		98A593F320C0F4E8004B69F3 /* MVVM-IOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "MVVM-IOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		98A593F620C0F4E8004B69F3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		98A593F820C0F4E8004B69F3 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -59,6 +61,14 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
+		9872C68520C143D400DDFCC2 /* remote */ = {
+			isa = PBXGroup;
+			children = (
+				9872C68620C143F100DDFCC2 /* LoginService.swift */,
+			);
+			path = remote;
+			sourceTree = "<group>";
+		};
 		98A593EA20C0F4E8004B69F3 = {
 			isa = PBXGroup;
 			children = (
@@ -94,6 +104,7 @@
 		98A5940820C0F62D004B69F3 /* model */ = {
 			isa = PBXGroup;
 			children = (
+				9872C68520C143D400DDFCC2 /* remote */,
 			);
 			path = model;
 			sourceTree = "<group>";
@@ -240,6 +251,7 @@
 				98A593F920C0F4E8004B69F3 /* ViewController.swift in Sources */,
 				98A593F720C0F4E8004B69F3 /* AppDelegate.swift in Sources */,
 				9872C68420C11F5B00DDFCC2 /* LoginViewModel.swift in Sources */,
+				9872C68720C143F100DDFCC2 /* LoginService.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

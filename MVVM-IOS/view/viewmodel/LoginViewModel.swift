@@ -15,11 +15,11 @@ class LoginViewModel {
     let password : Variable<String> = Variable("")
     let result : Variable<String> = Variable("")
     let signUpValid : Variable<Bool> = Variable(false)
-
+    
     
     
     init() {
-       
+        
     }
     
     func signup() -> Observable<Bool> {
@@ -27,15 +27,8 @@ class LoginViewModel {
         print(self.userName.value, self.password.value)
         
         
-        return Observable.create({ (subbmiter) -> Disposable in
-            if(self.userName.value != "ditclear") {
-                subbmiter.onError(NSError(domain: "12", code: 11))
-            }else{
-                subbmiter.onNext(true)
-            }
-            subbmiter.onCompleted()
-            return Disposables.create()
-        }).delay(2, scheduler: MainScheduler.asyncInstance)
+        return LoginService.login(userName.value, password.value)
+            .delay(2, scheduler: MainScheduler.asyncInstance)
             
             .do(onNext: { (success) in
                 self.result.value = "登录成功 \(self.userName.value) \(self.password.value)"

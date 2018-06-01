@@ -54,6 +54,7 @@ class ViewController: UIViewController {
             print("tap")
             self?.login()
         }).disposed(by: disposeBag)
+        
     }
     
     private func login() {
